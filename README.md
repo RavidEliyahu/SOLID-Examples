@@ -1,5 +1,5 @@
 # SOLID-Principles-Examples
-Welcome to the Solid Principles Learning Hub! This repository is a collection of interactive resources and examples designed to help you understand and apply the SOLID principles in your software development projects.
+Welcome to the Solid Principles Learning Hub! This repository is a collection of resources and examples designed to help you understand and apply the SOLID principles in your software development projects.
 
 Whether you are new to object-oriented programming or an experienced developer, these resources will provide you with a deeper understanding of these important design guidelines and how to use them to write clean, maintainable, and scalable code.
 
