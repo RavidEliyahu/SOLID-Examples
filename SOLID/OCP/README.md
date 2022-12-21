@@ -4,11 +4,6 @@ The open-closed principle is a principle in object-oriented design that states t
 
 ## Example
 In the incorrect implementation, the `PaymentProcessor` class processes a payment based on a string input that specifies the payment type. This means that if you want to add a new payment method, you need to modify the `ProcessPayment()` method to include a new `if` statement for that method. This violates the open-closed principle, as you are required to modify the existing code in order to add new functionality.
-```c#
-IPaymentMethod creditCard = new CreditCardPayment();
-PaymentProcessor processor = new PaymentProcessor(creditCard);
-processor.ProcessPayment(100);
-```
 
 ```c#
 // Incorrect implementation
@@ -81,4 +76,10 @@ public class PaymentProcessor
         paymentMethod.ProcessPayment(amount);
     }
 }
+```
+Client implementation:
+```c#
+IPaymentMethod creditCard = new CreditCardPayment();
+PaymentProcessor processor = new PaymentProcessor(creditCard);
+processor.ProcessPayment(100);
 ```
